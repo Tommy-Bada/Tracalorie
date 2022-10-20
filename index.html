@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <link rel="stylesheet" href="tracalorie.css">
     <script src="https://use.fontawesome.com/4cd1c68ce5.js"></script>
     <title>Tracalorie</title>
 </head>
@@ -13,16 +14,13 @@
         <div class=" nav-wrapper blue">
             <div class="container">
                 <a href="#" class="brand-logo center">Tracalorie</a>
-                <ul class="right">
-                    <li><a href="#" class="clear-btn btn blue lighten-3">Clear All</a></li>
-                </ul>
             </div>
         </div>
     </nav>
     <div class="container">
         <div class="card">
             <div class="card-container" style="padding: 20px;">
-                <span class="card-title">Add Meal/Food Item</span>
+                <span class="card-title">Add Food Item</span>
                 <form class="col">
                     <div class="row">
                         <div class="input-field col s6">
@@ -36,16 +34,19 @@
                         <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Add Meal</button>
                         <button class="update-btn btn orange darken-3"><i class="fa fa-pen-to-square"></i> Update Meal</button>
                         <button class="delete-btn btn red darken-3"><i class="fa fa-remove"></i> Delete Meal</button>
-                        <button class="back-btn btn grey pull-right"><i class="fa fa-rotate-left"></i> Back</button>
+                        <button class="back-btn btn grey"><i class="fa fa-rotate-left"></i> Back</button>
                     </div>
                 </form>
             </div>
         </div>
 
 
-        <h3 class="center align">Total Calories: <span class="total-calories">0</span></h3>
+        <h3 class="center align" style="font-size:28px;">Total Calories: <span class="total-calories">0</span></h3>
         <ul id="item-list" class="collection">
         </ul>
+    </div>
+    <div id="clear-btn-container">
+        <a href="#" class="clear-btn btn blue lighten-3">Clear All</a>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

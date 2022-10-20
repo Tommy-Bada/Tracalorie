@@ -8,4 +8,9 @@
 }
 button{
     margin-bottom: 5px;
+    width: fit-content;
+    font-size: 18px;
+}
+.input-field, label{
+    padding: 10px;
 }
